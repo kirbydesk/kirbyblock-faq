@@ -60,7 +60,7 @@ return array(
 	'kirbyblock-faq.item-gap' => 'Gap between the cards',
 	'kirbyblock-faq.item-shape' => 'Shape',
 	'kirbyblock-faq.item-radius' => 'Corner radius',
-	'kirbyblock-faq.item-text-gap' => 'Gap to the intro',
+	'kirbyblock-faq.item-text-gap' => 'Enlarge the gap to the intro',
 	'kirbyblock-faq.item-offset-gap' => 'Indent',
 	'kirbyblock-faq.item-offset-align' => 'Alignment',
 	'kirbyblock-faq.color.question' => 'Question',

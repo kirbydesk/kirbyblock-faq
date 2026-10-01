@@ -29,7 +29,7 @@ section[data-block="faq"][data-style="variant3"] {
 section[data-block="faq"] {
 	/* -------------- Gap to the intro --------------*/
 	:is([data-field="tagline"], [data-field="heading"], [data-field="textarea"], [data-field="writer"], [data-field="markdown"]) + [data-block="items"] {
-		margin-top: var(--pwfaq-item-text-gap);
+		padding-top: var(--pwfaq-item-text-gap);
 	}
 
 	/* -------------- Questions --------------*/
@@ -171,10 +171,17 @@ section[data-block="faq"] {
 
 	/* -------------- Split layout: intro left, questions right --------------*/
 	[data-block="intro"] + [data-block="items"] {
-		margin-top: var(--pwfaq-item-text-gap);
+		padding-top: var(--pwfaq-item-text-gap);
 	}
 }
 
+/* split, below 1024px the intro above the questions: its last element keeps
+   its space below (beside them from 1024px: none) */
+@media (max-width: 1023px) {
+	section[data-block="faq"][data-layout-style="split"] [data-block="intro"] > :last-child {
+		margin-bottom: var(--pw-space-after);
+	}
+}
 @media (min-width: 1024px) {
 	section[data-block="faq"][data-layout-style="split"] [data-layout="grid-item"] {
 		display: grid;
@@ -184,7 +191,7 @@ section[data-block="faq"] {
 		align-items: start;
 
 		[data-block="intro"] + [data-block="items"] {
-			margin-top: 0;
+			padding-top: 0;
 		}
 	}
 	section[data-block="faq"][data-layout-style="split"][data-offset-align="center"] [data-layout="grid-item"] {
@@ -192,11 +199,6 @@ section[data-block="faq"] {
 	}
 }
 
-/* the intro's last element: no space below of its own before the questions –
-   there only the gap to the intro applies */
-section[data-block="faq"][data-block] :is([data-field="tagline"], [data-field="heading"], [data-field="textarea"], [data-field="writer"], [data-field="markdown"]):has(+ [data-block="items"]):not([data-block="item"] *) {
-	margin-bottom: 0;
-}
 
 @media (prefers-reduced-motion: reduce) {
 	section[data-block="faq"] [data-field="icon"] svg,

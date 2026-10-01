@@ -164,7 +164,7 @@
 				},
 				"item-text-gap": {
 					"label": "kirbyblock-faq.item-text-gap",
-					"value": "2rem",
+					"value": "0rem",
 					"unit": "rem",
 					"step": 0.1,
 					"min": 0,
