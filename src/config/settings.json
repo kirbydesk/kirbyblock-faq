@@ -378,7 +378,8 @@
 						"value": "none",
 						"svg": "<circle cx='12' cy='12' r='9' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/><path d='M5.6 18.4L18.4 5.6' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/>"
 					}
-				]
+				],
+				"with": "item-icon-stroke"
 			},
 			"item-icon-position": {
 				"label": "kirbyblock-faq.item-icon-position",
