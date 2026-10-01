@@ -1,0 +1,27 @@
+{
+	"name": "kirbydesk/kirbyblock-faq",
+	"version": "1.0.0",
+	"description": "FAQ Block for Kirby CMS",
+	"type": "kirby-plugin",
+	"keywords": [
+		"kirby",
+		"kirby-plugin"
+	],
+	"license": "proprietary",
+	"homepage": "https://github.com/kirbydesk/kirbyblock-faq",
+	"authors": [
+		{
+			"name": "Christian Fickinger",
+			"email": "hello@kirbydesk.com",
+			"homepage": "https://kirbydesk.com"
+		}
+	],
+	"extra": {
+		"installer-name": "kirbyblock-faq"
+	},
+	"require": {
+		"getkirby/composer-installer": "^1.2",
+		"kirbydesk/kirby-pagewizard": "^1.1.54",
+		"kirbydesk/kirby-projectwizard": "^1.0"
+	}
+}

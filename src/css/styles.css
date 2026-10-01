@@ -1,0 +1,165 @@
+/* DO NOT MODIFY THIS FILE - Override in site/patches/css/kirbyblock-faq/_styles.css */
+
+/* -------------- Colours per variant --------------*/
+section[data-block="faq"] {
+	--pw-faq-question: var(--pwfaq-item-question);
+	--pw-faq-icon: var(--pwfaq-item-icon);
+	--pw-faq-divider: var(--pwfaq-item-divider);
+	--pw-faq-background: var(--pwfaq-item-background);
+}
+section[data-block="faq"][data-style="variant"] {
+	--pw-faq-question: var(--pwfaq-item-question-variant);
+	--pw-faq-icon: var(--pwfaq-item-icon-variant);
+	--pw-faq-divider: var(--pwfaq-item-divider-variant);
+	--pw-faq-background: var(--pwfaq-item-background-variant);
+}
+section[data-block="faq"][data-style="variant2"] {
+	--pw-faq-question: var(--pwfaq-item-question-variant2);
+	--pw-faq-icon: var(--pwfaq-item-icon-variant2);
+	--pw-faq-divider: var(--pwfaq-item-divider-variant2);
+	--pw-faq-background: var(--pwfaq-item-background-variant2);
+}
+section[data-block="faq"][data-style="variant3"] {
+	--pw-faq-question: var(--pwfaq-item-question-variant3);
+	--pw-faq-icon: var(--pwfaq-item-icon-variant3);
+	--pw-faq-divider: var(--pwfaq-item-divider-variant3);
+	--pw-faq-background: var(--pwfaq-item-background-variant3);
+}
+
+section[data-block="faq"] {
+	/* -------------- Gap to the intro --------------*/
+	:is([data-field="tagline"], [data-field="heading"], [data-field="textarea"], [data-field="writer"], [data-field="markdown"]) + [data-block="items"] {
+		margin-top: var(--pwfaq-item-text-gap);
+	}
+
+	/* -------------- Questions --------------*/
+	div[data-block="items"] {
+		[data-block="item"] {
+			display: block;
+		}
+
+		/* the question: its row – the heading (Elements › Items' title) and
+		   the icon – as the clickable summary */
+		[data-field="summary"] {
+			display: flex;
+			align-items: center;
+			gap: var(--pwfaq-item-icon-gap);
+			padding-block: var(--pwfaq-item-padding-y);
+			list-style: none;
+			cursor: pointer;
+
+			&::-webkit-details-marker {
+				display: none;
+			}
+			&:focus-visible {
+				outline: 2px solid var(--pw-faq-icon);
+				outline-offset: 2px;
+			}
+		}
+		[data-field="summary"] > [data-field="heading"] {
+			flex: 1;
+			color: var(--pw-faq-question);
+		}
+
+		/* the icon: a chevron turning down, a plus turning into a minus */
+		[data-field="icon"] {
+			flex: 0 0 auto;
+			display: flex;
+			color: var(--pw-faq-icon);
+
+			svg {
+				width: var(--pwfaq-item-icon-size);
+				height: var(--pwfaq-item-icon-size);
+				transition: transform 0.2s ease;
+			}
+			line[data-vertical] {
+				transition: opacity 0.2s ease;
+			}
+		}
+		&[data-icon-position="left"] [data-field="icon"] {
+			order: -1;
+		}
+		[open] > [data-field="summary"] [data-field="icon"] svg {
+			transform: rotate(90deg);
+		}
+		&[data-icon="plus"] [open] > [data-field="summary"] [data-field="icon"] svg {
+			transform: rotate(180deg);
+		}
+		&[data-icon="plus"] [open] > [data-field="summary"] line[data-vertical] {
+			opacity: 0;
+		}
+
+		/* the answer below its question */
+		[data-field="answer"] {
+			padding-bottom: var(--pwfaq-item-padding-y);
+			margin-top: calc(var(--pwfaq-item-answer-gap) - var(--pwfaq-item-padding-y));
+		}
+		/* up to the icon: as far from the right edge as the icon takes (or,
+		   icon on the left, indented as far) */
+		&[data-answer-width="text"]:not([data-icon="none"]):not([data-behavior="open"])[data-icon-position="right"] [data-field="answer"] {
+			padding-right: calc(var(--pwfaq-item-icon-size) + var(--pwfaq-item-icon-gap));
+		}
+		&[data-answer-width="text"]:not([data-icon="none"]):not([data-behavior="open"])[data-icon-position="left"] [data-field="answer"] {
+			padding-left: calc(var(--pwfaq-item-icon-size) + var(--pwfaq-item-icon-gap));
+		}
+
+		/* -------------- Style: lines between the questions --------------*/
+		&[data-style="lines"][data-divider="enabled"] [data-block="item"] + [data-block="item"] {
+			border-top: var(--pwfaq-item-divider-width) solid var(--pw-faq-divider);
+		}
+
+		/* -------------- Style: each question a card --------------*/
+		&[data-style="cards"] {
+			display: flex;
+			flex-direction: column;
+			gap: var(--pwfaq-item-gap);
+
+			[data-block="item"] {
+				padding-inline: var(--pwfaq-item-padding-x);
+				background-color: var(--pw-faq-background);
+			}
+			&[data-shape="custom"] [data-block="item"] {
+				border-radius:
+					var(--pwfaq-item-radius-top-left)
+					var(--pwfaq-item-radius-top-right)
+					var(--pwfaq-item-radius-bottom-right)
+					var(--pwfaq-item-radius-bottom-left);
+			}
+		}
+	}
+
+	/* -------------- Split layout: intro left, questions right --------------*/
+	[data-block="intro"] + [data-block="items"] {
+		margin-top: var(--pwfaq-item-text-gap);
+	}
+}
+
+@media (min-width: 1024px) {
+	section[data-block="faq"][data-layout-style="split"] [data-layout="grid-item"] {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		/* the offset: the gap between the intro and the questions */
+		column-gap: var(--pwfaq-item-offset-gap);
+		align-items: start;
+
+		[data-block="intro"] + [data-block="items"] {
+			margin-top: 0;
+		}
+	}
+	section[data-block="faq"][data-layout-style="split"][data-offset-align="center"] [data-layout="grid-item"] {
+		align-items: center;
+	}
+}
+
+/* the intro's last element: no space below of its own before the questions –
+   there only the gap to the intro applies */
+section[data-block="faq"][data-block] :is([data-field="tagline"], [data-field="heading"], [data-field="textarea"], [data-field="writer"], [data-field="markdown"]):has(+ [data-block="items"]):not([data-block="item"] *) {
+	margin-bottom: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	section[data-block="faq"] [data-field="icon"] svg,
+	section[data-block="faq"] [data-field="icon"] line[data-vertical] {
+		transition: none;
+	}
+}

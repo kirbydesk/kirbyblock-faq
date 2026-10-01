@@ -1,0 +1,513 @@
+{
+	"tabs": {
+		"layout": true,
+		"style": true,
+		"grid": true,
+		"settings": true
+	},
+	"values": {
+		"items": {
+			"colors": {
+				"item-question": {
+					"label": "kirbyblock-faq.color.question",
+					"default": "#1D548B",
+					"variant": "#FFFFFF",
+					"variant2": "#1D548B",
+					"variant3": "#FFFFFF"
+				},
+				"item-icon": {
+					"label": "kirbyblock-faq.color.icon",
+					"default": "#1D548B",
+					"variant": "#FFFFFF",
+					"variant2": "#1D548B",
+					"variant3": "#FFFFFF"
+				},
+				"item-divider": {
+					"label": "kirbyblock-faq.color.divider",
+					"default": "#C8C8C8",
+					"variant": "#8CBAE7",
+					"variant2": "#C8C8C8",
+					"variant3": "#8CBAE7"
+				},
+				"item-background": {
+					"label": "kirbyblock-faq.color.background",
+					"default": "#FFFFFF",
+					"variant": "#24619E",
+					"variant2": "#FFFFFF",
+					"variant3": "#24619E"
+				}
+			},
+			"vars": {
+				"item-icon-size": {
+					"label": "kirbyblock-faq.item-icon-size",
+					"default": "1.5rem",
+					"lg": "1.75rem",
+					"xl": "1.75rem",
+					"unit": "rem",
+					"step": 0.05,
+					"min": 0.5,
+					"max": 6
+				},
+				"item-icon-gap": {
+					"label": "kirbyblock-faq.item-icon-gap",
+					"value": "1.5rem",
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0,
+					"max": 6
+				},
+				"item-padding-y": {
+					"label": "kirbyblock-faq.item-padding-y",
+					"default": "1.25rem",
+					"lg": "1.5rem",
+					"xl": "1.5rem",
+					"unit": "rem",
+					"step": 0.05,
+					"min": 0,
+					"max": 6
+				},
+				"item-padding-x": {
+					"label": "kirbyblock-faq.item-padding-x",
+					"default": "1.25rem",
+					"lg": "1.5rem",
+					"xl": "1.5rem",
+					"unit": "rem",
+					"step": 0.05,
+					"min": 0,
+					"max": 6
+				},
+				"item-answer-gap": {
+					"label": "kirbyblock-faq.item-answer-gap",
+					"value": "0.75rem",
+					"unit": "rem",
+					"step": 0.05,
+					"min": 0,
+					"max": 4
+				},
+				"item-divider-width": {
+					"label": "kirbyblock-faq.item-divider-width",
+					"value": "1px",
+					"unit": "px",
+					"step": 1,
+					"min": 1,
+					"max": 8
+				},
+				"item-gap": {
+					"label": "kirbyblock-faq.item-gap",
+					"default": "0.75rem",
+					"lg": "1rem",
+					"xl": "1rem",
+					"unit": "rem",
+					"step": 0.05,
+					"min": 0,
+					"max": 6
+				},
+				"item-radius": {
+					"label": "kirbyblock-faq.item-radius",
+					"value": [
+						"0.5rem",
+						"0.5rem",
+						"0.5rem",
+						"0.5rem"
+					],
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0,
+					"max": 20,
+					"suffixes": [
+						"-top-left",
+						"-top-right",
+						"-bottom-left",
+						"-bottom-right"
+					],
+					"labels": [
+						"pw.option.top-left",
+						"pw.option.top-right",
+						"pw.option.bottom-left",
+						"pw.option.bottom-right"
+					]
+				},
+				"item-title-font-size": {
+					"default": "1.25rem",
+					"lg": "1.25rem",
+					"xl": "1.25rem",
+					"unit": "rem",
+					"step": 0.05,
+					"min": 0.5,
+					"max": 10
+				},
+				"item-title-line-height": {
+					"default": "1.3",
+					"lg": "1.3",
+					"xl": "1.3",
+					"unit": "",
+					"step": 0.05,
+					"min": 0.5,
+					"max": 3
+				},
+				"item-text-font-size": {
+					"default": "1rem",
+					"lg": "1rem",
+					"xl": "1rem",
+					"unit": "rem",
+					"step": 0.05,
+					"min": 0.5,
+					"max": 4
+				},
+				"item-offset-gap": {
+					"label": "kirbyblock-faq.item-offset-gap",
+					"value": "4rem",
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0,
+					"max": 12
+				},
+				"item-text-gap": {
+					"label": "kirbyblock-faq.item-text-gap",
+					"value": "2rem",
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0,
+					"max": 8
+				},
+				"tagline-spacing": {
+					"value": "0.5rem",
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0,
+					"max": 6
+				},
+				"heading-spacing": {
+					"value": "0.5rem",
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0,
+					"max": 6
+				},
+				"editor-spacing": {
+					"value": "1.2rem",
+					"unit": "rem",
+					"step": 0.1,
+					"min": 0,
+					"max": 6
+				},
+				"list-spacing": {
+					"value": "1em",
+					"unit": "em",
+					"step": 0.1,
+					"min": 0,
+					"max": 6
+				}
+			}
+		}
+	},
+	"fields": {
+		"content": {
+			"tagline": {
+				"align": {
+					"options": [
+						"left",
+						"center",
+						"right"
+					],
+					"default": "left"
+				}
+			},
+			"heading": {
+				"align": {
+					"options": [
+						"left",
+						"center",
+						"right"
+					],
+					"default": "left"
+				},
+				"level": {
+					"options": [
+						"h1",
+						"h2",
+						"h3",
+						"h4"
+					],
+					"default": "h2"
+				},
+				"sizes": {
+					"options": [
+						"xs",
+						"sm",
+						"md",
+						"lg",
+						"xl",
+						"2xl",
+						"3xl"
+					],
+					"default": "lg"
+				},
+				"textbackground": {
+					"options": [
+						"disabled",
+						"enabled"
+					],
+					"default": "disabled"
+				},
+				"flourish": {
+					"options": [
+						"disabled",
+						"enabled"
+					],
+					"default": "disabled"
+				}
+			},
+			"editor": {
+				"mode": {
+					"options": [
+						"textarea",
+						"writer"
+					],
+					"default": "textarea"
+				},
+				"align": {
+					"options": [
+						"left",
+						"center",
+						"right",
+						"justify"
+					],
+					"default": "left"
+				},
+				"sizes": {
+					"options": [
+						"normal",
+						"lg",
+						"xl",
+						"2xl",
+						"3xl"
+					],
+					"default": "normal"
+				}
+			},
+			"item-editor": {
+				"mode": {
+					"options": [
+						"textarea",
+						"writer"
+					],
+					"default": "writer"
+				},
+				"align": {
+					"options": [
+						"left",
+						"center",
+						"right",
+						"justify"
+					],
+					"default": "left"
+				},
+				"sizes": {
+					"options": [
+						"normal",
+						"lg",
+						"xl",
+						"2xl",
+						"3xl"
+					],
+					"default": "normal"
+				}
+			},
+			"blocks": {
+				"locked": true
+			}
+		},
+		"layout": {
+			"padding": "enabled",
+			"padding-top": {
+				"default": "large"
+			},
+			"padding-bottom": {
+				"default": "large"
+			},
+			"padding-left": {
+				"default": true
+			},
+			"padding-right": {
+				"default": true
+			},
+			"radius": "enabled",
+			"radius-top-left": {
+				"default": false
+			},
+			"radius-top-right": {
+				"default": false
+			},
+			"radius-bottom-left": {
+				"default": false
+			},
+			"radius-bottom-right": {
+				"default": false
+			},
+			"item-icon": {
+				"label": "kirbyblock-faq.item-icon",
+				"options": [
+					"chevron",
+					"plus",
+					"none"
+				],
+				"default": "chevron"
+			},
+			"item-icon-position": {
+				"label": "kirbyblock-faq.item-icon-position",
+				"options": [
+					"right",
+					"left"
+				],
+				"default": "right"
+			},
+			"item-icon-stroke": {
+				"label": "kirbyblock-faq.item-icon-stroke",
+				"options": [
+					"thin",
+					"normal",
+					"bold"
+				],
+				"default": "normal"
+			},
+			"item-divider": {
+				"label": "kirbyblock-faq.item-divider",
+				"options": [
+					"enabled",
+					"disabled"
+				],
+				"default": "enabled"
+			},
+			"item-answer-width": {
+				"label": "kirbyblock-faq.item-answer-width",
+				"options": [
+					"text",
+					"full"
+				],
+				"default": "text"
+			},
+			"item-shape": {
+				"label": "kirbyblock-faq.item-shape",
+				"options": [
+					"square",
+					"custom"
+				],
+				"default": "custom"
+			},
+			"item-offset-align": {
+				"label": "kirbyblock-faq.item-offset-align",
+				"options": [
+					"top",
+					"center"
+				],
+				"default": "top"
+			},
+			"item-entry": {
+				"label": "pw.field.item-entry",
+				"options": [
+					"global",
+					"own"
+				],
+				"default": "global"
+			},
+			"item-spacing": {
+				"label": "pw.field.item-spacing",
+				"options": [
+					"global",
+					"own"
+				],
+				"default": "global"
+			}
+		},
+		"style": {
+			"theme": {
+				"options": [
+					"default",
+					"variant",
+					"variant2",
+					"variant3",
+					"custom"
+				],
+				"required": true,
+				"default": "default"
+			},
+			"section-layout": {
+				"options": [
+					"stacked",
+					"split"
+				],
+				"default": "stacked",
+				"required": true
+			},
+			"faq-style": {
+				"label": "kirbyblock-faq.faq-style",
+				"options": [
+					"lines",
+					"cards"
+				],
+				"default": "lines"
+			},
+			"faq-behavior": {
+				"label": "kirbyblock-faq.faq-behavior",
+				"options": [
+					"multiple",
+					"single",
+					"open"
+				],
+				"default": "multiple"
+			},
+			"faq-first-open": {
+				"label": "kirbyblock-faq.faq-first-open",
+				"options": [
+					"no",
+					"yes"
+				],
+				"default": "no"
+			}
+		},
+		"grid": {
+			"grid-size-sm": {
+				"default": 12
+			},
+			"grid-size-md": {
+				"default": 12
+			},
+			"grid-size-lg": {
+				"default": 12
+			},
+			"grid-size-xl": {
+				"default": 12
+			},
+			"grid-offset-sm": {
+				"default": 0
+			},
+			"grid-offset-md": {
+				"default": 0
+			},
+			"grid-offset-lg": {
+				"default": 0
+			},
+			"grid-offset-xl": {
+				"default": 0
+			}
+		},
+		"settings": {
+			"block-size": {
+				"options": [
+					"content",
+					"fullscreen"
+				],
+				"required": true,
+				"fixed": true,
+				"default": "content"
+			},
+			"margin-top": {
+				"default": false
+			},
+			"margin-bottom": {
+				"default": true
+			}
+		}
+	}
+}
