@@ -388,7 +388,8 @@
 				"icons": {
 					"left": "text-left",
 					"right": "text-right"
-				}
+				},
+				"with": "item-icon-align"
 			},
 			"item-icon-align": {
 				"label": "kirbyblock-faq.item-icon-align",
