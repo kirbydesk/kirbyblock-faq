@@ -384,7 +384,11 @@
 					"right",
 					"left"
 				],
-				"default": "right"
+				"default": "right",
+				"icons": {
+					"right": "text-right",
+					"left": "text-left"
+				}
 			},
 			"item-icon-align": {
 				"label": "kirbyblock-faq.item-icon-align",
