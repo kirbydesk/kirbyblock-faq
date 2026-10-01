@@ -60,7 +60,7 @@ return array(
 	'kirbyblock-faq.item-gap' => 'Abstand zwischen den Karten',
 	'kirbyblock-faq.item-shape' => 'Form',
 	'kirbyblock-faq.item-radius' => 'Eckenradius',
-	'kirbyblock-faq.item-text-gap' => 'Abstand zur Einleitung vergrößern',
+	'kirbyblock-faq.item-text-gap' => 'Abstand zur Einleitung',
 	'kirbyblock-faq.item-offset-gap' => 'Einrückung',
 	'kirbyblock-faq.item-offset-align' => 'Ausrichtung',
 	'kirbyblock-faq.color.question' => 'Frage',
