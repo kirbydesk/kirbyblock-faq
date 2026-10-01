@@ -55,7 +55,7 @@ return array(
 	'kirbyblock-faq.item-answer-width.text' => 'Bis vor das Symbol',
 	'kirbyblock-faq.item-answer-width.full' => 'Volle Breite',
 	'kirbyblock-faq.item-answer-gap' => 'Abstand zur Antwort',
-	'kirbyblock-faq.item-padding-y' => 'Innenabstand oben und unten',
+	'kirbyblock-faq.item-padding-y' => 'Innenabstand',
 	'kirbyblock-faq.item-padding-x' => 'Innenabstand links und rechts',
 	'kirbyblock-faq.item-gap' => 'Abstand zwischen den Karten',
 	'kirbyblock-faq.item-shape' => 'Form',

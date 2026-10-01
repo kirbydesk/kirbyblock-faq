@@ -55,7 +55,7 @@ return array(
 	'kirbyblock-faq.item-answer-width.text' => 'Up to the icon',
 	'kirbyblock-faq.item-answer-width.full' => 'Full width',
 	'kirbyblock-faq.item-answer-gap' => 'Gap to the answer',
-	'kirbyblock-faq.item-padding-y' => 'Padding top and bottom',
+	'kirbyblock-faq.item-padding-y' => 'Padding',
 	'kirbyblock-faq.item-padding-x' => 'Padding left and right',
 	'kirbyblock-faq.item-gap' => 'Gap between the cards',
 	'kirbyblock-faq.item-shape' => 'Shape',
