@@ -14,7 +14,7 @@ return array(
 	/* -------------- Block settings (drawer, start values) --------------*/
 	'kirbyblock-faq.section-layout' => 'Layout',
 	'kirbyblock-faq.section-layout.help' => 'Die Einleitung steht über den Fragen oder ab 1024 px links daneben.',
-	'kirbyblock-faq.section-layout.stacked' => 'Standard',
+	'kirbyblock-faq.section-layout.stacked' => 'Untereinander',
 	'kirbyblock-faq.section-layout.split' => 'Eingerückt',
 	'kirbyblock-faq.faq-style' => 'Stil',
 	'kirbyblock-faq.faq-style.lines' => 'Linien',

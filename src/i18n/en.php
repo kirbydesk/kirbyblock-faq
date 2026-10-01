@@ -14,7 +14,7 @@ return array(
 	/* -------------- Block settings (drawer, start values) --------------*/
 	'kirbyblock-faq.section-layout' => 'Layout',
 	'kirbyblock-faq.section-layout.help' => 'The intro stands above the questions or, from 1024 px, beside them.',
-	'kirbyblock-faq.section-layout.stacked' => 'Standard',
+	'kirbyblock-faq.section-layout.stacked' => 'Stacked',
 	'kirbyblock-faq.section-layout.split' => 'Indented',
 	'kirbyblock-faq.faq-style' => 'Style',
 	'kirbyblock-faq.faq-style.lines' => 'Lines',
