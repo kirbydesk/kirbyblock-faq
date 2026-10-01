@@ -381,13 +381,13 @@
 			"item-icon-position": {
 				"label": "kirbyblock-faq.item-icon-position",
 				"options": [
-					"right",
-					"left"
+					"left",
+					"right"
 				],
 				"default": "right",
 				"icons": {
-					"right": "text-right",
-					"left": "text-left"
+					"left": "text-left",
+					"right": "text-right"
 				}
 			},
 			"item-icon-align": {
