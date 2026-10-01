@@ -3,24 +3,28 @@
 /* -------------- Colours per variant --------------*/
 section[data-block="faq"] {
 	--pw-faq-question: var(--pwfaq-item-question);
+	--pw-faq-answer: var(--pwfaq-item-answer);
 	--pw-faq-icon: var(--pwfaq-item-icon);
 	--pw-faq-divider: var(--pwfaq-item-divider);
 	--pw-faq-background: var(--pwfaq-item-background);
 }
 section[data-block="faq"][data-style="variant"] {
 	--pw-faq-question: var(--pwfaq-item-question-variant);
+	--pw-faq-answer: var(--pwfaq-item-answer-variant);
 	--pw-faq-icon: var(--pwfaq-item-icon-variant);
 	--pw-faq-divider: var(--pwfaq-item-divider-variant);
 	--pw-faq-background: var(--pwfaq-item-background-variant);
 }
 section[data-block="faq"][data-style="variant2"] {
 	--pw-faq-question: var(--pwfaq-item-question-variant2);
+	--pw-faq-answer: var(--pwfaq-item-answer-variant2);
 	--pw-faq-icon: var(--pwfaq-item-icon-variant2);
 	--pw-faq-divider: var(--pwfaq-item-divider-variant2);
 	--pw-faq-background: var(--pwfaq-item-background-variant2);
 }
 section[data-block="faq"][data-style="variant3"] {
 	--pw-faq-question: var(--pwfaq-item-question-variant3);
+	--pw-faq-answer: var(--pwfaq-item-answer-variant3);
 	--pw-faq-icon: var(--pwfaq-item-icon-variant3);
 	--pw-faq-divider: var(--pwfaq-item-divider-variant3);
 	--pw-faq-background: var(--pwfaq-item-background-variant3);
@@ -132,8 +136,13 @@ section[data-block="faq"] {
 
 		/* the answer below its question */
 		[data-field="answer"] {
+			color: var(--pw-faq-answer);
 			padding-bottom: var(--pwfaq-item-padding-y);
 			margin-top: calc(var(--pwfaq-item-answer-gap) - var(--pwfaq-item-padding-y));
+		}
+		/* (its text: the answer's colour over the editor element's) */
+		[data-field="answer"] [data-field="text"] {
+			color: var(--pw-faq-answer);
 		}
 		/* up to the icon: as far from the right edge as the icon takes (or,
 		   icon on the left, indented as far) */

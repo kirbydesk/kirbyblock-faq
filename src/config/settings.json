@@ -15,6 +15,13 @@
 					"variant2": "#1D548B",
 					"variant3": "#FFFFFF"
 				},
+				"item-answer": {
+					"label": "kirbyblock-faq.color.answer",
+					"default": "#262626",
+					"variant": "#FFFFFF",
+					"variant2": "#262626",
+					"variant3": "#FFFFFF"
+				},
 				"item-icon": {
 					"label": "kirbyblock-faq.color.icon",
 					"default": "#1D548B",
