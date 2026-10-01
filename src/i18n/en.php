@@ -50,7 +50,7 @@ return array(
 	'kirbyblock-faq.item-divider' => 'Dividers',
 	'kirbyblock-faq.item-divider.enabled' => 'On',
 	'kirbyblock-faq.item-divider.disabled' => 'Off',
-	'kirbyblock-faq.item-divider-width' => 'Line width',
+	'kirbyblock-faq.item-divider-width' => 'Divider width',
 	'kirbyblock-faq.item-answer-width' => 'Answer width',
 	'kirbyblock-faq.item-answer-width.text' => 'Up to the icon',
 	'kirbyblock-faq.item-answer-width.full' => 'Full width',

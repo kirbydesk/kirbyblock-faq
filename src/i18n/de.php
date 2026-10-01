@@ -50,7 +50,7 @@ return array(
 	'kirbyblock-faq.item-divider' => 'Trennlinien',
 	'kirbyblock-faq.item-divider.enabled' => 'An',
 	'kirbyblock-faq.item-divider.disabled' => 'Aus',
-	'kirbyblock-faq.item-divider-width' => 'Stärke der Linie',
+	'kirbyblock-faq.item-divider-width' => 'Stärke der Trennlinie',
 	'kirbyblock-faq.item-answer-width' => 'Breite der Antwort',
 	'kirbyblock-faq.item-answer-width.text' => 'Bis vor das Symbol',
 	'kirbyblock-faq.item-answer-width.full' => 'Volle Breite',
