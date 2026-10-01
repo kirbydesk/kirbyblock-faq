@@ -65,6 +65,7 @@ if ($items->count() > 0):
 	echo ' data-icon-kind="' . $iconKind . '"';
 	echo ' style="--pw-faq-stroke:' . $iconStroke . '"';
 	echo ' data-icon-position="' . $iconPosition . '"';
+	echo ' data-icon-align="' . ($defaults['item-icon-align'] ?? 'center') . '"';
 	echo ' data-divider="' . ($defaults['item-divider'] ?? 'enabled') . '"';
 	echo ' data-answer-width="' . ($defaults['item-answer-width'] ?? 'text') . '"';
 	echo ' data-shape="' . ($defaults['item-shape'] ?? 'custom') . '"';

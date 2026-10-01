@@ -83,6 +83,43 @@ section[data-block="faq"] {
 		&[data-icon-position="left"] [data-field="icon"] {
 			order: -1;
 		}
+		/* on the question's first line (a question over two lines): the icon
+		   centred in the height of one line of it */
+		&[data-icon-align="top"] [data-field="summary"] {
+			align-items: flex-start;
+		}
+		&[data-icon-align="top"] [data-field="icon"] {
+			align-items: center;
+			min-height: calc(var(--item-title-font-size) * var(--item-title-line-height));
+		}
+		/* in the middle of the whole entry (question and open answer): out of
+		   the question's row, its room kept free there */
+		&[data-icon-align="item"] [data-block="item"] {
+			position: relative;
+		}
+		&[data-icon-align="item"] [data-field="icon"] {
+			position: absolute;
+			top: 50%;
+			translate: 0 -50%;
+		}
+		&[data-icon-align="item"][data-icon-position="right"] [data-field="icon"] {
+			right: 0;
+		}
+		&[data-icon-align="item"][data-icon-position="left"] [data-field="icon"] {
+			left: 0;
+		}
+		&[data-icon-align="item"][data-style="cards"][data-icon-position="right"] [data-field="icon"] {
+			right: var(--pwfaq-item-padding-x);
+		}
+		&[data-icon-align="item"][data-style="cards"][data-icon-position="left"] [data-field="icon"] {
+			left: var(--pwfaq-item-padding-x);
+		}
+		&[data-icon-align="item"][data-icon-position="right"]:not([data-icon="none"]) [data-field="summary"] {
+			padding-right: calc(var(--pwfaq-item-icon-size) + var(--pwfaq-item-icon-gap));
+		}
+		&[data-icon-align="item"][data-icon-position="left"]:not([data-icon="none"]) [data-field="summary"] {
+			padding-left: calc(var(--pwfaq-item-icon-size) + var(--pwfaq-item-icon-gap));
+		}
 		&[data-icon-kind="turn"] [open] > [data-field="summary"] [data-field="icon"] svg {
 			transform: rotate(90deg);
 		}

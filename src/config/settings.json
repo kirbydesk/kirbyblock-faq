@@ -386,6 +386,15 @@
 				],
 				"default": "right"
 			},
+			"item-icon-align": {
+				"label": "kirbyblock-faq.item-icon-align",
+				"options": [
+					"top",
+					"center",
+					"item"
+				],
+				"default": "center"
+			},
 			"item-icon-stroke": {
 				"label": "kirbyblock-faq.item-icon-stroke",
 				"options": [
