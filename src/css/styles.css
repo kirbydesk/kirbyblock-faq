@@ -72,20 +72,24 @@ section[data-block="faq"] {
 				height: var(--pwfaq-item-icon-size);
 				transition: transform 0.2s ease;
 			}
-			line[data-vertical] {
+			/* (the stroke chosen in the Project Wizard over the drawing's own) */
+			svg [stroke] {
+				stroke-width: var(--pw-faq-stroke, 1.5);
+			}
+			[data-vertical] {
 				transition: opacity 0.2s ease;
 			}
 		}
 		&[data-icon-position="left"] [data-field="icon"] {
 			order: -1;
 		}
-		[open] > [data-field="summary"] [data-field="icon"] svg {
+		&[data-icon-kind="turn"] [open] > [data-field="summary"] [data-field="icon"] svg {
 			transform: rotate(90deg);
 		}
-		&[data-icon="plus"] [open] > [data-field="summary"] [data-field="icon"] svg {
+		&[data-icon-kind="plus"] [open] > [data-field="summary"] [data-field="icon"] svg {
 			transform: rotate(180deg);
 		}
-		&[data-icon="plus"] [open] > [data-field="summary"] line[data-vertical] {
+		&[data-icon-kind="plus"] [open] > [data-field="summary"] [data-vertical] {
 			opacity: 0;
 		}
 
@@ -159,7 +163,7 @@ section[data-block="faq"][data-block] :is([data-field="tagline"], [data-field="h
 
 @media (prefers-reduced-motion: reduce) {
 	section[data-block="faq"] [data-field="icon"] svg,
-	section[data-block="faq"] [data-field="icon"] line[data-vertical] {
+	section[data-block="faq"] [data-field="icon"] [data-vertical] {
 		transition: none;
 	}
 }

@@ -17,12 +17,15 @@ $icon         = $defaults['item-icon'] ?? 'chevron';
 $iconPosition = $defaults['item-icon-position'] ?? 'right';
 $iconStroke   = ['thin' => 1, 'normal' => 1.5, 'bold' => 2.5][$defaults['item-icon-stroke'] ?? 'normal'] ?? 1.5;
 
-// The icon: a chevron (turns down when open) or a plus (turns into a minus)
-$iconSvg = match ($icon) {
-	'chevron' => '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="' . $iconStroke . '" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 4 17 12 9 20"/></svg>',
-	'plus'    => '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="' . $iconStroke . '" stroke-linecap="round"><line x1="4" y1="12" x2="20" y2="12"/><line data-vertical x1="12" y1="4" x2="12" y2="20"/></svg>',
-	default   => '',
-};
+// The icon: its drawing from the icon choice; a plus turns into a minus
+// when open, the others turn down
+$iconSvg = '';
+foreach ($config['layout']['item-icon']['options'] ?? [] as $option) {
+	if (is_array($option) && ($option['value'] ?? null) === $icon && $icon !== 'none') {
+		$iconSvg = '<svg viewBox="0 0 24 24" aria-hidden="true">' . ($option['svg'] ?? '') . '</svg>';
+	}
+}
+$iconKind = in_array($icon, ['plus', 'circle-plus'], true) ? 'plus' : 'turn';
 
 // An answer as HTML: the writer's as it is, plain text masked with its
 // line breaks
@@ -58,7 +61,9 @@ if ($items->count() > 0):
 	echo '<div data-block="items"';
 	echo ' data-style="' . $faqStyle . '"';
 	echo ' data-behavior="' . $behavior . '"';
-	echo ' data-icon="' . $icon . '"';
+	echo ' data-icon="' . ($iconSvg === '' ? 'none' : $icon) . '"';
+	echo ' data-icon-kind="' . $iconKind . '"';
+	echo ' style="--pw-faq-stroke:' . $iconStroke . '"';
 	echo ' data-icon-position="' . $iconPosition . '"';
 	echo ' data-divider="' . ($defaults['item-divider'] ?? 'enabled') . '"';
 	echo ' data-answer-width="' . ($defaults['item-answer-width'] ?? 'text') . '"';
