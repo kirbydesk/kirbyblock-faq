@@ -412,8 +412,8 @@
 			"item-divider": {
 				"label": "kirbyblock-faq.item-divider",
 				"options": [
-					"enabled",
-					"disabled"
+					"disabled",
+					"enabled"
 				],
 				"default": "enabled"
 			},
