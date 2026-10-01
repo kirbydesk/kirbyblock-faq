@@ -65,6 +65,6 @@ return array(
 	'kirbyblock-faq.item-offset-align' => 'Ausrichtung',
 	'kirbyblock-faq.color.question' => 'Frage',
 	'kirbyblock-faq.color.icon' => 'Symbol',
-	'kirbyblock-faq.color.divider' => 'Linie',
+	'kirbyblock-faq.color.divider' => 'Trennlinie',
 	'kirbyblock-faq.color.background' => 'Karte',
 );

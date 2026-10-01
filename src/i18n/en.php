@@ -65,6 +65,6 @@ return array(
 	'kirbyblock-faq.item-offset-align' => 'Alignment',
 	'kirbyblock-faq.color.question' => 'Question',
 	'kirbyblock-faq.color.icon' => 'Icon',
-	'kirbyblock-faq.color.divider' => 'Line',
+	'kirbyblock-faq.color.divider' => 'Divider',
 	'kirbyblock-faq.color.background' => 'Card',
 );
