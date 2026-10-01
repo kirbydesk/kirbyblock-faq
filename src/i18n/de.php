@@ -1,7 +1,7 @@
 <?php
 
 return array(
-	'kirbyblock-faq.name' => 'FAQ',
+	'kirbyblock-faq.name' => 'Häufig gestellte Fragen',
 	'kirbyblock-faq.ai' => 'Häufige Fragen mit Antworten, die sich aufklappen lassen. Für Fragen, die Interessenten oder Kunden immer wieder stellen.',
 
 	/* -------------- Questions --------------*/
