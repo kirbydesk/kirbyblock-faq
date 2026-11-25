@@ -218,6 +218,23 @@
 						"right"
 					],
 					"default": "left"
+				},
+				"leadline": {
+					"options": [
+						"off",
+						"straight",
+						"bent"
+					],
+					"default": "off"
+				},
+				"leadlinestyle": {
+					"options": [
+						"solid",
+						"dashed",
+						"dotted",
+						"wavy"
+					],
+					"default": "solid"
 				}
 			},
 			"heading": {
